@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div> {{ example }}</div>
+
   </div>
 </template>
 <script>
@@ -8,7 +8,7 @@ export default {
   components: {},
   data() {
     return {
-      example: 'ggㅎㅎㅎㅎㅎㅎㅎㅎ'
+      example: ''
     }
   },
   setup() { },

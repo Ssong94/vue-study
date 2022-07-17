@@ -1,9 +1,11 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">About</router-link> |
+    <router-link to="/databinding/string">databindingString</router-link> |
+    <router-link to="/databinding/html">databindingView</router-link> |
   </nav>
-  <router-view/>
+  <router-view />
 </template>
 
 <style>
@@ -26,5 +28,9 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+
+a {
+  text-decoration: none;
 }
 </style>

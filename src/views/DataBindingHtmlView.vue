@@ -1,6 +1,7 @@
 <template>
+  ㅇㅁㅈㅇㅁㄴㅇ
   <div>
-    <div> {{ example }}</div>
+    <div v-html="example"></div>
   </div>
 </template>
 <script>
@@ -8,7 +9,7 @@ export default {
   components: {},
   data() {
     return {
-      example: 'ggㅎㅎㅎㅎㅎㅎㅎㅎ'
+      example: '<p style="color:red;">빨간색 문자</p>'
     }
   },
   setup() { },

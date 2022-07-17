@@ -21,9 +21,33 @@ const routes = [
   {
     path: '/databinding/string',
     name: 'DataBindingStringView',
-    component: () => import(/* webpackChunkName: "about" */ '../views/DataBindingStringView.vue')
+    component: () => import(/* webpackChunkName: "DataBindingStringView" */ '../views/DataBindingStringView.vue')
+  },
+  {
+    path: '/databinding/html',
+    name: 'DataBindingHtmlView',
+    component: () => import(/* webpackChunkName: "DataBindingStringView" */ '../views/DataBindingHtmlView.vue')
+  },
+  {
+    path: '/databinding/input',
+    name: 'DataBindingInputView',
+    component: () => import(/* webpackChunkName: "DataBindingStringView" */ '../views/DataBindingInputView.vue')
+  },
+  {
+    path: '/databinding/select',
+    name: 'DataBindingSelectView',
+    component: () => import(/* webpackChunkName: "DataBindingStringView" */ '../views/DataBindingSelectView.vue')
+  },
+  {
+    path: '/databinding/attr',
+    name: 'DataBindingAttrView',
+    component: () => import(/* webpackChunkName: "DataBindingStringView" */ '../views/DataBindingAttrView.vue')
+  },
+  {
+    path: '/change',
+    name: 'EventChangeView',
+    component: () => import(/* webpackChunkName: "DataBindingStringView" */ '../views/EventChangeView.vue')
   }
-
 ]
 
 const router = createRouter({
