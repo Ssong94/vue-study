@@ -5,7 +5,7 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: HomeView //
   },
   {
     path: '/about',
@@ -13,8 +13,17 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
+    // 화면을 눌렀을 때 그때 페이지를 가져옴
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    // webpackPrefetch를 쓰게 되면 캐시에 저장한 후 눌렀을 때 캐시에 저장된 걸 보여준다.
+    // component: () => import(/* webpackChunkName: "about", webpackPrefetch: true */ '../views/AboutView.vue')
+  },
+  {
+    path: '/databinding/string',
+    name: 'DataBindingStringView',
+    component: () => import(/* webpackChunkName: "about" */ '../views/DataBindingStringView.vue')
   }
+
 ]
 
 const router = createRouter({
